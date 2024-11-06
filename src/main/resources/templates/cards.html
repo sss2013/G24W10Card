@@ -9,7 +9,7 @@
 <body>
 <h3>Good Luck</h3>
 <th:block th:each="card : ${cards}">
-<img th:src="@{/images/{name}(name=${card.imageName})}"
+<img th:src="@{/images/{name}(name=${card})}"
   alt = "카드 이미지"
   width = "200px"/>
 </th:block>

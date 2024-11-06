@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html
+        lang="ko"
+        xmlns:th="http://www.thymeleaf.org" >
+<head>
+    <meta charset="UTF-8">
+    <title>카드</title>
+</head>
+<body>
+<h3>Good Luck</h3>
+<th:block th:each="card : ${cards}">
+<img th:src="@{/images/{name}(name=${card.imageName})}"
+  alt = "카드 이미지"
+  width = "200px"/>
+</th:block>
+</body>
+</html>
